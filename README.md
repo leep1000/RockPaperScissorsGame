@@ -1,3 +1,7 @@
+# RockPaperScissorsGame
+
+Fun Rock, Paper, Scissors game, made in HTML, CSS and Javascript.
+
 # Rock Paper Scissors, DOM Edition
 
 Following on from last week's hackathon, we want to refactor our rock, paper, scissors console application and turn it into an interactive HTML page.
@@ -53,4 +57,4 @@ Commit after you've coded and tested each refactor with a commit message summari
 
 Once you've finished all the ways you can think of, move on to the next piece of logic and keep refactoring and committing.
 
-- 🌟 BONUS: Once you've finished refactoring every bit of the existing logic, can you think of any other features to add? 
+- 🌟 BONUS: Once you've finished refactoring every bit of the existing logic, can you think of any other features to add?
