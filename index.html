@@ -1,30 +1,32 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Rock Paper Scissors</title>
-  <link rel="stylesheet" href="style.css">
+	<title>Rock Paper Scissors Game</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
-  <div id="game">
-    <h1>Rock Paper Scissors</h1>
-    <div id="username-section">
-      <label for="username">Enter your username:</label>
-      <input type="text" id="username" name="username">
-      <button id="start-btn">Start Game</button>
+	<div class="scoreboard">
+		<h1>Score: <span id="score">0</span></h1>
+		<h2>Rounds Played: <span id="rounds-played">0</span></h2>
+		<h2 id="special-message"></h2>
+	</div>
+    <div class ="username">
+        <label for="username">Enter your name:</label>
+        <input type="text" id="username" name="username" maxlength="10">
+        <button id="confirm-username" class="small-button">Confirm</button>
+        <p id="greeting">Ready?</p>
     </div>
-    <div id="play-section">
-      <p id="score">Score: <span id="user-score">0</span> - <span id="computer-score">0</span></p>
-      <p id="round">Round <span id="round-num">1</span></p>
-      <div id="choices">
-        <button class="choice" id="rock"><img src="rock.png"></button>
-        <button class="choice" id="paper"><img src="paper.png"></button>
-        <button class="choice" id="scissors"><img src="scissors.png"></button>
-      </div>
-      <button id="play-again-btn">Play Again</button>
-      <button id="reset-btn">Reset Score</button>
-      <button id="stop-btn">Stop Game</button>
-    </div>
-  </div>
-  <script src="script.js"></script>
+	<div class="game-buttons">
+		<button class="rock" onclick="play('rock')">👊</button>
+		<button class="paper" onclick="play('paper')">✋</button>
+		<button class="scissors" onclick="play('scissors')">✌️</button>
+	</div>
+	<div class="game-buttons">
+		<button class="play-again" onclick="playAgain()">Play Again</button>
+		<button class="reset-score" onclick="resetScore()">Reset Score</button>
+		<button class="end-game" onclick="endGame()">End Game</button>
+	</div>
+
+	<script src="main.js"></script>
 </body>
 </html>
